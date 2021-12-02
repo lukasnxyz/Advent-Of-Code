@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 int main(int argc, char* argv[]) {
-    char const* const fileName = argv[1]; /* should check that argc > 1 */
-    FILE* file = fopen(fileName, "r"); /* should check the result */
+    char const* const fileName = argv[1];
+    FILE* file = fopen(fileName, "r");
     char line[20];
 
     // part a
@@ -33,7 +33,7 @@ int main(int argc, char* argv[]) {
     fclose(file);
 
     // part b
-    FILE* file1 = fopen(fileName, "r"); /* should check the result */
+    FILE* file1 = fopen(fileName, "r");
 
     int aim = 0;
     depth = 0;
