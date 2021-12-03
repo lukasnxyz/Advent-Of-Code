@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
     char const* const fileName = argv[1];
     FILE* file = fopen(fileName, "r");
     char line[20];
