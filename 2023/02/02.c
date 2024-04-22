@@ -139,7 +139,12 @@ char **strToWords(char *str)
 	int len = (int)strLen(str);
 
 	char **words = (char **)malloc((len + 1) * sizeof(char *));
-	/* check for allocation fail */
+  if(words == NULL)
+  {
+    free(words);
+    return NULL;
+  }
+
 	char tmp[len];
 
 	int x = 0;
