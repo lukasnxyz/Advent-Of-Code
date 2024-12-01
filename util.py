@@ -1,5 +1,7 @@
 from typing import List
 
+#https://www.keiruaprod.fr/blog/2021/11/23/getting-ready-for-adventofcode-in-python.html
+
 def input_as_string(filename: str) -> str:
   """
   returns the content of the input file as a string
